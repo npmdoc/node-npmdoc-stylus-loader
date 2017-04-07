@@ -1,0 +1,728 @@
+<html><head></head><body><div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a href="https://github.com/shama/stylus-loader#readme">stylus-loader (v3.0.1)</a>
+</h1>
+<h4>Stylus loader for webpack</h4>
+<div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stylus-loader">module stylus-loader</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylus-loader.evaluator">
+            function <span class="apidocSignatureSpan">stylus-loader.</span>evaluator
+            <span class="apidocSignatureSpan">(root, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylus-loader.pathcache">
+            function <span class="apidocSignatureSpan">stylus-loader.</span>pathcache
+            <span class="apidocSignatureSpan">(contexts, sources, imports)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">stylus-loader.</span>evaluator.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">stylus-loader.</span>pathcache.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stylus-loader.evaluator">module stylus-loader.evaluator</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylus-loader.evaluator.evaluator">
+            function <span class="apidocSignatureSpan">stylus-loader.</span>evaluator
+            <span class="apidocSignatureSpan">(root, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stylus-loader.evaluator.prototype">module stylus-loader.evaluator.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylus-loader.evaluator.prototype.constructor">
+            function <span class="apidocSignatureSpan">stylus-loader.evaluator.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(root, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylus-loader.evaluator.prototype.visitImport">
+            function <span class="apidocSignatureSpan">stylus-loader.evaluator.prototype.</span>visitImport
+            <span class="apidocSignatureSpan">(imported)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stylus-loader.pathcache">module stylus-loader.pathcache</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylus-loader.pathcache.pathcache">
+            function <span class="apidocSignatureSpan">stylus-loader.</span>pathcache
+            <span class="apidocSignatureSpan">(contexts, sources, imports)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylus-loader.pathcache.create">
+            function <span class="apidocSignatureSpan">stylus-loader.pathcache.</span>create
+            <span class="apidocSignatureSpan">(contexts, sources, imports)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylus-loader.pathcache.createFromFile">
+            function <span class="apidocSignatureSpan">stylus-loader.pathcache.</span>createFromFile
+            <span class="apidocSignatureSpan">(helpers, parentCache, source, fullPath)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylus-loader.pathcache.resolvers">
+            function <span class="apidocSignatureSpan">stylus-loader.pathcache.</span>resolvers
+            <span class="apidocSignatureSpan">(options, webpackResolver)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.stylus-loader.pathcache.prototype">module stylus-loader.pathcache.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylus-loader.pathcache.prototype.allDeps">
+            function <span class="apidocSignatureSpan">stylus-loader.pathcache.prototype.</span>allDeps
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylus-loader.pathcache.prototype.find">
+            function <span class="apidocSignatureSpan">stylus-loader.pathcache.prototype.</span>find
+            <span class="apidocSignatureSpan">(path, dirname)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.stylus-loader.pathcache.prototype.isIndex">
+            function <span class="apidocSignatureSpan">stylus-loader.pathcache.prototype.</span>isIndex
+            <span class="apidocSignatureSpan">(path, dirname)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stylus-loader" id="apidoc.module.stylus-loader">module stylus-loader</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.stylus-loader.evaluator" id="apidoc.element.stylus-loader.evaluator">
+        function <span class="apidocSignatureSpan">stylus-loader.</span>evaluator
+        <span class="apidocSignatureSpan">(root, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CachedPathEvaluator(root, options) {
+  Evaluator.apply(this, arguments);
+
+  this.cache = options.cache;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stylus-loader.pathcache" id="apidoc.element.stylus-loader.pathcache">
+        function <span class="apidocSignatureSpan">stylus-loader.</span>pathcache
+        <span class="apidocSignatureSpan">(contexts, sources, imports)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function PathCache(contexts, sources, imports) {
+  this.contexts = contexts;
+  this.sources = sources;
+  this.imports = imports;
+
+  // Non relative paths are simpler and looked up in this as a fallback
+  // to this.context.
+  this.simpleContext = {};
+  for (var dirname in this.contexts) {
+    for (var path in this.contexts[dirname]) {
+      this.simpleContext[path] = this.contexts[dirname][path];
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stylus-loader.evaluator" id="apidoc.module.stylus-loader.evaluator">module stylus-loader.evaluator</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.stylus-loader.evaluator.evaluator" id="apidoc.element.stylus-loader.evaluator.evaluator">
+        function <span class="apidocSignatureSpan">stylus-loader.</span>evaluator
+        <span class="apidocSignatureSpan">(root, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CachedPathEvaluator(root, options) {
+  Evaluator.apply(this, arguments);
+
+  this.cache = options.cache;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stylus-loader.evaluator.prototype" id="apidoc.module.stylus-loader.evaluator.prototype">module stylus-loader.evaluator.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.stylus-loader.evaluator.prototype.constructor" id="apidoc.element.stylus-loader.evaluator.prototype.constructor">
+        function <span class="apidocSignatureSpan">stylus-loader.evaluator.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(root, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CachedPathEvaluator(root, options) {
+  Evaluator.apply(this, arguments);
+
+  this.cache = options.cache;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stylus-loader.evaluator.prototype.visitImport" id="apidoc.element.stylus-loader.evaluator.prototype.visitImport">
+        function <span class="apidocSignatureSpan">stylus-loader.evaluator.prototype.</span>visitImport
+        <span class="apidocSignatureSpan">(imported)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">visitImport = function (imported) {
+  this.return++;
+
+  var path = this.visit(imported.path).first
+    , nodeName = imported.once ? 'require' : 'import'
+    , found
+    , literal
+    , index;
+
+  this.return--;
+  // debug('import %s', path);
+
+  // url() passed
+  if ('url' == path.name) {
+    if (imported.once) throw new Error('You cannot @require a url');
+
+    return imported;
+  }
+
+  // Ensure string
+  if (!path.string) throw new Error('@' + nodeName + ' string expected');
+
+  var name = path = path.string;
+
+  // Absolute URL
+  if (/url\s*\(\s*['"]?(?:https?:)?\/\//i.test(path)) {
+    if (imported.once) throw new Error('You cannot @require a url');
+    return imported;
+  }
+
+  // Literal
+  if (/\.css(?:"|$)/.test(path)) {
+    literal = true;
+    if (!imported.once &amp;&amp; !this.includeCSS) {
+      return imported;
+    }
+  }
+
+  // support optional .styl
+  if (!literal &amp;&amp; !/\.styl$/i.test(path)) path += '.styl';
+
+<span class="apidocCodeCommentSpan">  /*****************************************************************************
+  * THIS IS THE ONLY BLOCK THAT DIFFERS FROM THE ACTUAL STYLUS IMPLEMENTATION. *
+  *****************************************************************************/
+</span>  // Lookup
+  var dirname = this.paths[this.paths.length - 1];
+  found = this.cache.find(path, dirname);
+  index = this.cache.isIndex(path, dirname);
+  if (!found) {
+    found = utils.find(path, this.paths, this.filename);
+    if (!found) {
+      found = utils.lookupIndex(name, this.paths, this.filename);
+      index = true;
+    }
+  }
+
+  // Throw if import failed
+  if (!found) throw new Error('failed to locate @' + nodeName + ' file ' + path);
+
+  var block = new nodes.Block;
+
+  for (var i = 0, len = found.length; i &lt; len; ++i) {
+    block.push(importFile.call(this, imported, found[i], literal, index));
+  }
+
+  return block;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stylus-loader.pathcache" id="apidoc.module.stylus-loader.pathcache">module stylus-loader.pathcache</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.stylus-loader.pathcache.pathcache" id="apidoc.element.stylus-loader.pathcache.pathcache">
+        function <span class="apidocSignatureSpan">stylus-loader.</span>pathcache
+        <span class="apidocSignatureSpan">(contexts, sources, imports)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function PathCache(contexts, sources, imports) {
+  this.contexts = contexts;
+  this.sources = sources;
+  this.imports = imports;
+
+  // Non relative paths are simpler and looked up in this as a fallback
+  // to this.context.
+  this.simpleContext = {};
+  for (var dirname in this.contexts) {
+    for (var path in this.contexts[dirname]) {
+      this.simpleContext[path] = this.contexts[dirname][path];
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stylus-loader.pathcache.create" id="apidoc.element.stylus-loader.pathcache.create">
+        function <span class="apidocSignatureSpan">stylus-loader.pathcache.</span>create
+        <span class="apidocSignatureSpan">(contexts, sources, imports)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">create = function (contexts, sources, imports) {
+  return when(new PathCache(contexts, sources, imports));
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function CachedPathEvaluator(root, options) {
+Evaluator.apply(this, arguments);
+
+this.cache = options.cache;
+}
+
+CachedPathEvaluator.prototype = Object.<span class="apidocCodeKeywordSpan">create</span>(Evaluator.prototype);
+CachedPathEvaluator.prototype.constructor = CachedPathEvaluator;
+
+CachedPathEvaluator.prototype.visitImport = function(imported) {
+this.return++;
+
+var path = this.visit(imported.path).first
+  , nodeName = imported.once ? 'require' : 'import'
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stylus-loader.pathcache.createFromFile" id="apidoc.element.stylus-loader.pathcache.createFromFile">
+        function <span class="apidocSignatureSpan">stylus-loader.pathcache.</span>createFromFile
+        <span class="apidocSignatureSpan">(helpers, parentCache, source, fullPath)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function resolveFileDeep(helpers, parentCache, source, fullPath) {
+  var resolvers = helpers.resolvers;
+  var readFile = helpers.readFile;
+
+  var contexts = parentCache.contexts;
+  var sources = parentCache.sources;
+
+  contexts = contexts || {};
+  var nestResolve = resolveFileDeep.bind(null, helpers, parentCache, null);
+  var context = path.dirname(fullPath);
+  readFile = whenNodefn.lift(readFile);
+
+  return when
+    .resolve(source || sources[fullPath] || readFile(fullPath))
+    // Cast the buffer from the cached input file system to a string.
+    .then(String)
+    // Store the source so that the evaluator doesn't need to touch the
+    // file system.
+    .then(function(_source) {
+      sources[fullPath] = _source;
+      return _source;
+    })
+    // Make sure the stylus functions/index.styl source is stored.
+    .then(partial(ensureFunctionsSource, sources))
+    // List imports and use its cache. The source file is translated into a
+    // list of imports. Where the source file came from isn't important for the
+    // list. The where is added by resolveMany with the context and resolvers.
+    .then(partialRight(listImports, { cache: parentCache.imports }))
+    .then(resolveMany.bind(null, resolvers, context))
+    .then(function(newPaths) {
+      // Contexts are the full path since multiple could be in the same folder
+      // but different deps.
+      contexts[context] = merge(contexts[context] || {}, newPaths);
+      return when.map(Object.keys(newPaths), function(key) {
+        var found = newPaths[key] &amp;&amp; newPaths[key].path;
+        if (found) {
+          return when.map(found, nestResolve);
+        }
+      });
+    })
+    .then(function() {
+      return PathCache.create(contexts, sources, parentCache.imports);
+    });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+paths.forEach(styl.import.bind(styl));
+paths.forEach(self.addDependency);
+
+var readFile = whenNodefn.lift(pathCacheHelpers.readFile);
+return when.reduce(paths, function(cache, filepath) {
+  return readFile(filepath)
+    .then(function(source) {
+      return PathCache.<span class="apidocCodeKeywordSpan">createFromFile</span>(
+        pathCacheHelpers, cache, source.toString(), filepath
+      );
+    });
+}, {
+  contexts: {},
+  sources: {},
+  imports: importsCache,
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stylus-loader.pathcache.resolvers" id="apidoc.element.stylus-loader.pathcache.resolvers">
+        function <span class="apidocSignatureSpan">stylus-loader.pathcache.</span>resolvers
+        <span class="apidocSignatureSpan">(options, webpackResolver)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function resolvers(options, webpackResolver) {
+  var evaluator = new Evaluator(nodes.null, options);
+  var whenWebpackResolver = whenNodefn.lift(webpackResolver);
+
+  // Stylus's normal resolver for single files.
+  var stylusFile = function(context, path) {
+    // Stylus adds .styl to paths for normal "paths" lookup if it isn't there.
+    if (!/.styl$/.test(path)) {
+      path += '.styl';
+    }
+
+    var paths = options.paths.concat(context);
+    var found = utils.find(path, paths, options.filename)
+    if (found) {
+      return normalizePaths(found);
+    }
+  };
+
+  // Stylus's normal resolver for node_modules packages. Cannot locate paths
+  // inside a package.
+  var stylusIndex = function(context, path) {
+    // Stylus calls the argument name. If it exists it should match the name
+    // of a module in node_modules.
+    if (!path) {
+      return null;
+    }
+
+    var paths = options.paths.concat(context);
+    var found = utils.lookupIndex(path, paths, options.filename);
+    if (found) {
+      return {path: normalizePaths(found), index: true};
+    }
+  };
+
+  // Fallback to resolving with webpack's configured resovler.
+  var webpackResolve = function(context, path) {
+    // Follow the webpack stylesheet idiom of '~path' meaning a path in a
+    // modules folder and a unprefixed 'path' meaning a relative path like
+    // './path'.
+    path = loaderUtils.urlToRequest(path, options.root);
+    // First try with a '.styl' extension.
+    return whenWebpackResolver(context, path + '.styl')
+      // If the user adds ".styl" to resolve.extensions, webpack can find
+      // index files like stylus but it uses all of webpack's configuration,
+      // by default for example the module could be web_modules.
+      .catch(function() { return whenWebpackResolver(context, path); })
+      .catch(function() { return null; })
+      .then(function(result) {
+        return Array.isArray(result) &amp;&amp; result[1] &amp;&amp; result[1].path || result
+      });
+  };
+
+  if (options.preferPathResolver === 'webpack') {
+    return [
+      webpackResolve,
+      stylusFile,
+      stylusIndex
+    ];
+  }
+  else {
+    return [
+      stylusFile,
+      stylusIndex,
+      webpackResolve
+    ];
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+try {
+  var inputFileSystem = this._compiler.inputFileSystem;
+  readFile = inputFileSystem.readFile.bind(inputFileSystem);
+} catch (error) {
+  readFile = fs.readFile;
+}
+
+var boundResolvers = PathCache.<span class="apidocCodeKeywordSpan">resolvers</span>(options, this.resolve);
+var pathCacheHelpers = {
+  resolvers: boundResolvers,
+  readFile: readFile,
+};
+
+// Use plugins here so that resolve related side effects can be used while we resolve imports.
+(Array.isArray(use) ? use : [use]).forEach(styl.use, styl);
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.stylus-loader.pathcache.prototype" id="apidoc.module.stylus-loader.pathcache.prototype">module stylus-loader.pathcache.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.stylus-loader.pathcache.prototype.allDeps" id="apidoc.element.stylus-loader.pathcache.prototype.allDeps">
+        function <span class="apidocSignatureSpan">stylus-loader.pathcache.prototype.</span>allDeps
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">allDeps = function () {
+  var deps = [];
+  for (var dirname in this.contexts) {
+    for (var path in this.contexts[dirname]) {
+      if (this.contexts[dirname][path]) {
+        deps = deps.concat(this.contexts[dirname][path].path);
+      }
+    }
+  }
+  return deps;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+    .then(function(cache) {
+return PathCache
+  .createFromFile(pathCacheHelpers, cache, source, options.filename);
+    })
+    .then(function(importPathCache) {
+// CachedPathEvaluator will use this PathCache to find its dependencies.
+options.cache = importPathCache;
+importPathCache.<span class="apidocCodeKeywordSpan">allDeps</span>().forEach(function(f) {
+  self.addDependency(path.normalize(f));
+});
+
+// var paths = importPathCache.origins;
+
+styl.render(function(err, css) {
+  if (err) {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stylus-loader.pathcache.prototype.find" id="apidoc.element.stylus-loader.pathcache.prototype.find">
+        function <span class="apidocSignatureSpan">stylus-loader.pathcache.prototype.</span>find
+        <span class="apidocSignatureSpan">(path, dirname)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">find = function (path, dirname) {
+  if (this.contexts[dirname] &amp;&amp; this.contexts[dirname][path]) {
+    return this.contexts[dirname][path].path;
+  } else if (this.simpleContext[path]) {
+    return this.simpleContext[path].path;
+  } else if (/.styl$/.test(path)) {
+    // A user can specify @import 'something.styl' but if they specify
+    // @import 'something' stylus adds .styl, we drop that here to see if we
+    // looked for it without .styl.
+    return this.find(path.replace(/.styl$/, ''), dirname);
+  } else {
+    return undefined;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+if (!literal &amp;&amp; !/\.styl$/i.test(path)) path += '.styl';
+
+/*****************************************************************************
+* THIS IS THE ONLY BLOCK THAT DIFFERS FROM THE ACTUAL STYLUS IMPLEMENTATION. *
+*****************************************************************************/
+// Lookup
+var dirname = this.paths[this.paths.length - 1];
+found = this.cache.<span class="apidocCodeKeywordSpan">find</span>(path, dirname);
+index = this.cache.isIndex(path, dirname);
+if (!found) {
+  found = utils.find(path, this.paths, this.filename);
+  if (!found) {
+    found = utils.lookupIndex(name, this.paths, this.filename);
+    index = true;
+  }
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.stylus-loader.pathcache.prototype.isIndex" id="apidoc.element.stylus-loader.pathcache.prototype.isIndex">
+        function <span class="apidocSignatureSpan">stylus-loader.pathcache.prototype.</span>isIndex
+        <span class="apidocSignatureSpan">(path, dirname)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">isIndex = function (path, dirname) {
+  if (this.contexts[dirname] &amp;&amp; this.contexts[dirname][path]) {
+    return this.contexts[dirname][path].index;
+  } else {
+    return undefined;
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+/*****************************************************************************
+* THIS IS THE ONLY BLOCK THAT DIFFERS FROM THE ACTUAL STYLUS IMPLEMENTATION. *
+*****************************************************************************/
+// Lookup
+var dirname = this.paths[this.paths.length - 1];
+found = this.cache.find(path, dirname);
+index = this.cache.<span class="apidocCodeKeywordSpan">isIndex</span>(path, dirname);
+if (!found) {
+  found = utils.find(path, this.paths, this.filename);
+  if (!found) {
+    found = utils.lookupIndex(name, this.paths, this.filename);
+    index = true;
+  }
+}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
+</body></html>
