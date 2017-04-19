@@ -1,7 +1,7 @@
 {
     "author": "kai zhu <kaizhu256@gmail.com>",
     "buildNpmdoc": "stylus-loader",
-    "description": "api documentation for [stylus-loader (v3.0.1)](https://github.com/shama/stylus-loader#readme) [![npm package](https://img.shields.io/npm/v/npmdoc-stylus-loader.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-stylus-loader) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-stylus-loader.svg)](https://travis-ci.org/npmdoc/node-npmdoc-stylus-loader)",
+    "description": "#### api documentation for  [stylus-loader (v3.0.1)](https://github.com/shama/stylus-loader#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-stylus-loader.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-stylus-loader) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-stylus-loader.svg)](https://travis-ci.org/npmdoc/node-npmdoc-stylus-loader)",
     "devDependencies": {
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
         "stylus-loader": "*",
@@ -36,5 +36,5 @@
         "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
         "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
-    "version": "0.0.1"
+    "version": "0.0.2"
 }
